@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ecommerce Web</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="addItem" id="addItem">
+          <form onsubmit="handleSubmit(event)" class="formAdd">
+            <div class="formNav">
+              <i class="fa-solid fa-xmark" id="xmark"></i>
+            </div>
+            <div class="nameimg">
+              <div class="grid-item">
+                <div class="pinput">
+                  <p id="ptitle"></p>
+                  <input
+                    class="input"
+                    id="title"
+                    type="text"
+                    name="title"
+                    value=""
+                    placeholder="Title name"
+                    required
+                  />
+                </div>
+                <div class="pinput">
+                  <p id="pcategory"></p>
+                  <input
+                    class="input"
+                    id="category"
+                    type="text"
+                    name="category"
+                    value=""
+                    placeholder="Category name"
+                    required
+                  />
+                </div>
+                <div class="pinput">
+                  <p id="pprice"></p>
+                  <input
+                    class="input"
+                    id="price"
+                    type="number"
+                    name="price"
+                    value=""
+                    placeholder="Price"
+                    required
+                  />
+                </div>
+                <div class="pinput">
+                  <p id="pdescription"></p>
+                  <textarea
+                    class="input"
+                    id="description"
+                    value=""
+                    placeholder="Description"
+                    required
+                  >
+                  </textarea>
+                </div>
+                <div class="btn">
+                  <button type="reset" class="btn reset">Reset</button>
+                  <button type="submit" class="btn submit">Submit</button>
+                </div>
+              </div>
+              <div class="imagefilediv">
+                <div class="imgfile">
+                  <label for="choosefile"
+                    ><i class="fa-solid fa-camera"></i
+                  ></label>
+                  <input
+                    class="choosefile"
+                    id="choosefile"
+                    type="file"
+                    accept="image/jpeg,image/jpg,image/png"
+                  />
+                  <img
+                    id="profile"
+                    src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="bodyItem" id="bodyItem">
+          <div class="bodyItemleft">
+            <div class="dataCreate">
+              <nav id="nav">
+                <h1>Ecommerce Web</h1>
+                <div class="searchdiv">
+                  <span
+                    ><label for="search"
+                      ><i class="fa-solid fa-magnifying-glass"></i></label
+                  ></span>
+                  &nbsp;<input
+                    oninput="handleSearch(this.value)"
+                    type="text"
+                    value=""
+                    class="search"
+                    id="search"
+                    placeholder="search"
+                  />
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-cart-plus" id="cartPlus"></i>
+
+                  <i class="fa-solid fa-cart-shopping" id="shopping"></i>
+                  <label
+                    for="shopping"
+                    class="cardlength"
+                    id="cardlength"
+                  ></label>
+                </div>
+              </nav>
+            </div>
+
+            <div class="dataView" id="dataView">
+              <!-- <div class="item">
+                <img
+                  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                  alt="images"
+                />
+                <div class="detal">
+                  <h1>priduct Titledvedrhdfhtdch ffhgykyhulkuilhv fghfth</h1>
+                  <p>category :</p>
+                  <p>Price : $200</p>
+                  <button>Buy</button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="addTocard">
+            <div class="cardfixed" id="cardfixed">
+              <!-- <div class="rightitem">
+                <h2 class="rightheader">title</h2>
+                <p>P-50$</p>
+                <p>T-100$</p>
+                <div>
+                  <button class="incrementbtn">+</button>
+                  <span>2</span>
+                  <button class="decrementbtn">-</button>
+                  <button class="decrementbtn">D</button>
+                </div>
+              </div> -->
+              <!-- <div class="rightitem">
+                <h2 class="rightheader">title</h2>
+                <p>P-54240$</p>
+                <p>T-100$</p>
+                <div>
+                  <button class="incrementbtn">+</button>
+                  <span>2</span>
+                  <button class="decrementbtn">-</button>
+                  <button class="decrementbtn">D</button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+::-webkit-scrollbar {
+  width: 15px;
+}
+.cardfixed::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fbf9f9;
+  margin: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #138599;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+main {
+  height: 98vh;
+  width: 98vw;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+section {
+  height: 95vh;
+  width: 95vw;
+  margin: 0 auto;
+}
+.bodyItemStyle {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.addTocard {
+  position: relative;
+  width: 30vw;
+  padding: 20px;
+}
+.dataCreate {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  display: flex;
+  padding: 0 20px;
+}
+.icon i {
+  margin-left: 30px;
+}
+.dataCreate {
+  /* background: #000; */
+}
+nav {
+  position: fixed;
+  width: 90%;
+  height: 100px;
+  background: #b1a8a8c4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  color: #fff;
+  font-size: 35px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.navStyle {
+  width: 65%;
+}
+.searchdiv {
+  width: 40%;
+  display: flex;
+}
+.searchdiv span label i {
+  font-size: 30px;
+  color: crimson;
+}
+.search {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  border: 1px solid #3456;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.cardlengthStyle {
+  height: 20px;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 5px;
+  background: crimson;
+  border-radius: 50%;
+}
+.dataView {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  transition: 0.5s;
+}
+.dataViewStyle {
+  grid-template-columns: auto auto auto;
+}
+.item {
+  height: 80vh;
+  width: 20vw;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 20px #3456;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.item img {
+  height: 450px;
+  width: 20vw;
+}
+.details {
+  width: 20vw;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detailsItem {
+  margin: 0 auto;
+}
+
+.detailsItem h1 {
+  width: 18vw;
+  color: crimson;
+  margin: 0 auto;
+}
+.detailsItem p {
+  width: 18vw;
+  color: #3456;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.actionBtn button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: crimson;
+}
+
+/*///////////////////////////////////////////////////////////*/
+
+.addItem {
+  position: fixed;
+  height: 90vh;
+  width: 90vw;
+  background-color: #3456;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 50px;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s;
+}
+.formaddstyle {
+  z-index: 100;
+  opacity: 1;
+}
+.formNav {
+  padding: 20px;
+  font-size: 30px;
+  color: crimson;
+  background-color: rgba(248, 235, 238, 0.544);
+  display: flex;
+  justify-content: end;
+  border-radius: 10px;
+}
+
+.formAdd {
+  position: relative;
+  height: 80vh;
+  width: 80vw;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.nameimg {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nameimg .imagefilediv .imgfile img {
+  height: 500px;
+  width: 350px;
+  /* filter: drop-shadow(offset-x offset-y blur-radius #5236); */
+}
+.nameimg .imagefilediv .imgfile input {
+  position: absolute;
+  display: none;
+}
+.nameimg .imagefilediv .imgfile label {
+  position: absolute;
+  color: cadetblue;
+  font-size: 35px;
+  padding: 5px;
+  background-color: rgba(204, 209, 214, 0.333);
+  border-radius: 5px;
+}
+.imagefilediv {
+  padding: 20px;
+}
+
+.grid-item {
+  width: 50%;
+}
+
+.input,
+textarea {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #2345;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.grid-item textarea {
+  height: 200px;
+}
+
+.btn {
+  width: 103%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.reset {
+  width: 20%;
+  color: #fff;
+  background-color: crimson;
+  border: none;
+}
+.submit {
+  width: 79%;
+  color: #fff;
+  background-color: rgba(53, 220, 20, 0.91);
+  border: none;
+}
+/*////////////////////////////*/
+.cardfixed {
+  position: fixed;
+  width: 26vw;
+  height: 90vh;
+  overflow: auto;
+  padding: 0 10px;
+}
+.cardfixedStyle {
+  display: none;
+}
+.rightitem {
+  width: 23vw;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(68, 85, 102, 0.236);
+}
+.imghead {
+  display: grid;
+  grid-template-columns: auto;
+}
+.imghead h2 {
+  color: rgba(34, 51, 68, 0.788);
+}
+.imghead img {
+  height: 50px;
+}
+.pt {
+  display: grid;
+  grid-template-columns: auto;
+  font-size: 16px;
+  color: rgba(34, 51, 68, 0.788);
+}
+.cardBtn {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+}
+.cardBtn button {
+  font-size: 18px;
+  padding: 5px 7px;
+  color: #fff;
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.cardBtn p {
+  color: #fff;
+  padding: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: crimson;
+}
